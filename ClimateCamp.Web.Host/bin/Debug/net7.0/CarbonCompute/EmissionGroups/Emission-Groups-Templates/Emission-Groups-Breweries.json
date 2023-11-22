@@ -1,0 +1,239 @@
+[
+  {
+    "id": null,
+    "name": "All Emissions",
+    "icon": "home",
+    "emissionSourceId": null,
+    "organizationId": null,
+    "parentEmissionGroupId": null
+  },
+  {
+    "name": "Transport",
+    "icon": "fas fa-truck-moving",
+    "organizationId": null,
+    "emissionSourceId": null,
+    "parentEmissionGroupId": null,
+    "id": null,
+    "children": [
+      {
+        "name": "Downstream transport",
+        "icon": "fas fa-truck",
+        "organizationId": null,
+        "emissionSourceId": null,
+        "parentEmissionGroupId": null,
+        "id": null,
+        "children": []
+      },
+      {
+        "name": "Upstream transport",
+        "icon": "fas fa-truck",
+        "organizationId": null,
+        "emissionSourceId": 11,
+        "parentEmissionGroupId": null,
+        "id": null,
+        "children": []
+      }
+    ]
+  },
+
+  {
+    "name": "Energy",
+    "icon": "fas fa-fire",
+    "organizationId": null,
+    "emissionSourceId": null,
+    "parentEmissionGroupId": null,
+    "id": null,
+    "children": [
+      {
+        "name": "Electricity",
+        "icon": "power",
+        "organizationId": null,
+        "emissionSourceId": 4,
+        "parentEmissionGroupId": null,
+        "id": null,
+        "children": []
+      },
+      {
+        "name": "Gas",
+        "icon": "fas fa-faucet",
+        "organizationId": null,
+        "emissionSourceId": 5,
+        "parentEmissionGroupId": null,
+        "id": null,
+        "children": []
+      }
+    ]
+  },
+
+  {
+    "name": "Waste generated in operations",
+    "icon": "fas fa-trash-alt",
+    "organizationId": null,
+    "emissionSourceId": 21,
+    "parentEmissionGroupId": null,
+    "id": null,
+    "children": []
+  },
+
+  {
+    "id": null,
+    "name": "Employee transport",
+    "icon": "fas fa-car",
+    "organizationId": null,
+    "emissionSourceId": null,
+    "parentEmissionGroupId": null,
+    "children": [
+      {
+        "id": null,
+        "name": "Business travel",
+        "icon": "fas fa-plane",
+        "organizationId": null,
+        "emissionSourceId": null,
+        "parentEmissionGroupId": null,
+        "children": [
+          {
+            "name": "Train",
+            "icon": "train",
+            "organizationId": null,
+            "emissionSourceId": 2,
+            "parentEmissionGroupId": null,
+            "children": [],
+            "id": null
+          },
+          {
+            "name": "Plane",
+            "icon": "fas fa-plane",
+            "organizationId": null,
+            "emissionSourceId": 3,
+            "parentEmissionGroupId": null,
+            "children": [],
+            "id": null
+          },
+          {
+            "id": null,
+            "name": "Car",
+            "icon": "directions_car",
+            "organizationId": null,
+            "emissionSourceId": null,
+            "parentEmissionGroupId": null,
+            "children": [
+              {
+                "name": "Electric car",
+                "icon": "fas fa-charging-station",
+                "organizationId": null,
+                "emissionSourceId": 4,
+                "parentEmissionGroupId": null,
+                "children": [],
+                "id": null
+              },
+              {
+                "name": "Fuel car",
+                "icon": "fas fa-oil-can",
+                "organizationId": null,
+                "emissionSourceId": 1,
+                "parentEmissionGroupId": null,
+                "children": [],
+                "id": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": null,
+        "name": "Employee commute",
+        "icon": "directions_car",
+        "organizationId": null,
+        "emissionSourceId": null,
+        "parentEmissionGroupId": null,
+        "children": [
+          {
+            "name": "Bus",
+            "icon": "directions_bus",
+            "organizationId": null,
+            "emissionSourceId": 2,
+            "parentEmissionGroupId": null,
+            "children": [],
+            "id": null
+          },
+          {
+            "name": "Car",
+            "icon": "fas fa-car-side",
+            "organizationId": null,
+            "emissionSourceId": null,
+            "parentEmissionGroupId": null,
+            "id": null,
+            "children": [
+              {
+                "name": "Fuel car",
+                "icon": "fas fa-oil-can",
+                "organizationId": null,
+                "emissionSourceId": 1,
+                "parentEmissionGroupId": null,
+                "children": [],
+                "id": null
+              },
+              {
+                "name": "Electric car",
+                "icon": "fas fa-charging-station",
+                "organizationId": null,
+                "emissionSourceId": 4,
+                "parentEmissionGroupId": null,
+                "children": [],
+                "id": null
+              }
+            ]
+          },
+          {
+            "name": "Tram",
+            "icon": "tram",
+            "organizationId": null,
+            "emissionSourceId": 2,
+            "parentEmissionGroupId": null,
+            "children": [],
+            "id": null
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "name": "Packaging",
+    "icon": "fas fa-box",
+    "organizationId": null,
+    "emissionSourceId": null,
+    "parentEmissionGroupId": null,
+    "id": null,
+    "children": [
+      {
+        "name": "Cardboard",
+        "icon": "fas fa-box-open",
+        "organizationId": null,
+        "emissionSourceId": 10,
+        "parentEmissionGroupId": null,
+        "id": null,
+        "children": []
+      },
+      {
+        "name": "Plastic",
+        "icon": "fas fa-barcode",
+        "organizationId": null,
+        "emissionSourceId": 10,
+        "parentEmissionGroupId": null,
+        "id": null,
+        "children": []
+      }
+    ]
+  },
+
+  {
+    "name": "Raw materials",
+    "icon": "fas fa-receipt",
+    "organizationId": null,
+    "emissionSourceId": 10,
+    "parentEmissionGroupId": null,
+    "id": null,
+    "children": []
+  }
+]

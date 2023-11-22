@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "oECQ1uurtrtmb/SwAxrYTl3VcMsxc9wdOmVxFFloQiY=",
+  "Source": "ClimateCamp.Common.Web.Host",
+  "BasePath": "_content/ClimateCamp.Common.Web.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ClimateCamp.Common.Web.Host\\wwwroot",
+      "Source": "ClimateCamp.Common.Web.Host",
+      "ContentRoot": "D:\\ClimateCamp.io\\repo\\Climate-Camp-Portal\\ClimateCamp.Web.Host\\wwwroot\\",
+      "BasePath": "_content/ClimateCamp.Common.Web.Host",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\ClimateCamp.io\\repo\\Climate-Camp-Portal\\ClimateCamp.Web.Host\\wwwroot\\swagger\\ui\\abp.js",
+      "SourceId": "ClimateCamp.Common.Web.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ClimateCamp.io\\repo\\Climate-Camp-Portal\\ClimateCamp.Web.Host\\wwwroot\\",
+      "BasePath": "_content/ClimateCamp.Common.Web.Host",
+      "RelativePath": "swagger/ui/abp.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger\\ui\\abp.js"
+    },
+    {
+      "Identity": "D:\\ClimateCamp.io\\repo\\Climate-Camp-Portal\\ClimateCamp.Web.Host\\wwwroot\\swagger\\ui\\abp.swagger.js",
+      "SourceId": "ClimateCamp.Common.Web.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ClimateCamp.io\\repo\\Climate-Camp-Portal\\ClimateCamp.Web.Host\\wwwroot\\",
+      "BasePath": "_content/ClimateCamp.Common.Web.Host",
+      "RelativePath": "swagger/ui/abp.swagger.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger\\ui\\abp.swagger.js"
+    }
+  ]
+}

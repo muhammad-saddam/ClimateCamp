@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>ClimateCamp.Core</AssemblyName>
+    <PackageId>ClimateCamp.Core</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <UserSecretsId>ClimateCamp-Common-56C2EF2F-ABD6-4EFC-AAF2-2E81C34E8FB1</UserSecretsId>
+    <RootNamespace>ClimateCamp.Core</RootNamespace>
+    
+    <CodeAnalysisRuleSet>..\.sonarlint\climatecamp_climate-camp-portalcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\SourceFiles\*.xml" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CarbonCompute\**" />
+    <EmbeddedResource Remove="CarbonCompute\**" />
+    <None Remove="CarbonCompute\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="EmailClient\Templates\ActivateUserEmail.cshtml" />
+    <None Remove="EmailClient\Templates\PersonalInvite.cshtml" />
+    <None Remove="EmailClient\Templates\ResetPasswordEmail.cshtml" />
+    <None Remove="EmailClient\Templates\TeamsChannelEmail.cshtml" />
+    <None Remove="EmailClient\Templates\SendDataRequestToOrganization.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarbonCompute\BusinessTravelData.cs" />
+    <Compile Include="CarbonCompute\CarbonFootprints.cs" />
+    <Compile Include="CarbonCompute\CustomerProduct.cs" />
+    <Compile Include="CarbonCompute\EmissionGroups.cs" />
+    <Compile Include="CarbonCompute\EmployeeCommuteData.cs" />
+    <Compile Include="CarbonCompute\EndOfLifeTreatment.cs" />
+    <Compile Include="CarbonCompute\Enum\ActivityDataStatus.cs" />
+    <Compile Include="CarbonCompute\Enum\Availability.cs" />
+    <Compile Include="CarbonCompute\Enum\BiogenicAccountingMethodology.cs" />
+    <Compile Include="CarbonCompute\Enum\CrossSectoralStandards.cs" />
+    <Compile Include="CarbonCompute\Enum\Scope2Methodology.cs" />
+    <Compile Include="CarbonCompute\Enum\Scope3Methodology.cs" />
+    <Compile Include="CarbonCompute\Enum\TransportAndDistributionType.cs" />
+    <Compile Include="CarbonCompute\Enum\OrganizationStatus.cs" />
+    <Compile Include="CarbonCompute\Enum\ProductStatus.cs" />
+    <Compile Include="CarbonCompute\Enum\WasteTreatmentMethod.cs" />
+    <Compile Include="CarbonCompute\FuelAndEnergyData.cs" />
+    <Compile Include="CarbonCompute\FugitiveEmissionsData.cs" />
+    <Compile Include="CarbonCompute\Product.cs" />
+    <Compile Include="CarbonCompute\ProductEmissions.cs" />
+    <Compile Include="CarbonCompute\ProductsEmissionSources.cs" />
+    <Compile Include="CarbonCompute\PurchasedProductsData.cs" />
+    <Compile Include="CarbonCompute\Sector.cs" />
+    <Compile Include="CarbonCompute\LifeCycleActivity.cs" />
+    <Compile Include="CarbonCompute\StationaryCombustionData.cs" />
+    <Compile Include="CarbonCompute\PurchasedEnergyData.cs" />
+    <Compile Include="CarbonCompute\MobileCombustionData.cs" />
+    <Compile Include="CarbonCompute\ActivityData.cs" />
+    <Compile Include="CarbonCompute\ActivityType.cs" />
+    <Compile Include="CarbonCompute\CalculationModel.cs" />
+    <Compile Include="CarbonCompute\ContractualInstrument.cs" />
+    <Compile Include="CarbonCompute\Emission.cs" />
+    <Compile Include="CarbonCompute\EmissionsFactor.cs" />
+    <Compile Include="CarbonCompute\EmissionsFactorsLibrary.cs" />
+    <Compile Include="CarbonCompute\EmissionsSource.cs" />
+    <Compile Include="CarbonCompute\FuelType.cs" />
+    <Compile Include="CarbonCompute\GHG.cs" />
+    <Compile Include="CarbonCompute\GreenhouseGas.cs" />
+    <Compile Include="CarbonCompute\IndustrialProcess.cs" />
+    <Compile Include="CarbonCompute\TransportAndDistributionData.cs" />
+    <Compile Include="CarbonCompute\Unit.cs" />
+    <Compile Include="CarbonCompute\UseOfSoldProductsData.cs" />
+    <Compile Include="CarbonCompute\VehicleType.cs" />
+    <Compile Include="CarbonCompute\WasteGeneratedData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\climatecamp_climate-camp-portal\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmailClient\Templates\PersonalInvite.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailClient\Templates\TeamsChannelEmail.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailClient\Templates\ResetPasswordEmail.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailClient\Templates\ActivateUserEmail.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource> 
+	<EmbeddedResource Include="EmailClient\Templates\SendDataRequestToOrganization.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="8.1.0" />
+    <PackageReference Include="Abp.FluentValidation" Version="8.1.0" />
+    <PackageReference Include="Abp.ZeroCore.EntityFrameworkCore" Version="8.1.0" />
+    <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="3.4.0" />
+    <PackageReference Include="libphonenumber-csharp" Version="8.13.6" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.50.0" />
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="4.13.0" />
+    <PackageReference Include="NetTopologySuite" Version="2.5.0" />
+    <PackageReference Include="RazorLight" Version="2.3.1" />
+    <PackageReference Include="System.Threading.AccessControl" Version="7.0.1" />
+  </ItemGroup>
+</Project>

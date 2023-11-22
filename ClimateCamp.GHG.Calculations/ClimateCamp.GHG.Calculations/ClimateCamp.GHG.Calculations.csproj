@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+    <CodeAnalysisRuleSet>..\..\.sonarlint\climatecamp_climate-camp-portalcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ClientCalculationFunctions\Rydoo\**" />
+    <Compile Remove="ClimateCamp\**" />
+    <Compile Remove="Constants\Enums\**" />
+    <EmbeddedResource Remove="ClientCalculationFunctions\Rydoo\**" />
+    <EmbeddedResource Remove="ClimateCamp\**" />
+    <EmbeddedResource Remove="Constants\Enums\**" />
+    <None Remove="ClientCalculationFunctions\Rydoo\**" />
+    <None Remove="ClimateCamp\**" />
+    <None Remove="Constants\Enums\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="local.settings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\.sonarlint\climatecamp_climate-camp-portal\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="local.settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.12.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.10.1" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ClimateCamp.Application\ClimateCamp.Application.csproj" />
+    <ProjectReference Include="..\..\ClimateCamp.EntityFrameworkCore\ClimateCamp.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientCalculationFunctions\" />                                                                                                                                                                  
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
+  </ItemGroup>
+</Project>
+                                                                   

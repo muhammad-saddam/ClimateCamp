@@ -1,0 +1,40 @@
+﻿# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- development
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 4.4.1'
+  inputs:
+    versionSpec: 4.4.1
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: '$(Parameters.solution)'
+
+- task: VSBuild@1
+  displayName: 'Build solution **\*.sln'
+  inputs:
+    solution: '$(Parameters.solution)'
+    msbuildArgs: '/t:pack'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'ClimateCamp.Core'
+    Contents: '**\bin\\**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: '7bee2a25-84a4-4120-b1c7-f2cf174b5afc'

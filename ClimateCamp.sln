@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.Core", "ClimateCamp.Core\ClimateCamp.Core.csproj", "{0FA75A5B-AB83-4FD0-B545-279774C01E87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.Application", "ClimateCamp.Application\ClimateCamp.Application.csproj", "{3870C648-4AEA-4B85-BA3F-F2F63B96136A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.Migrator", "ClimateCamp.Migrator\ClimateCamp.Migrator.csproj", "{880B3591-E057-46FE-B525-10BD83828B93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.Web.Host", "ClimateCamp.Web.Host\ClimateCamp.Web.Host.csproj", "{38E184BD-E874-4633-A947-AED4FDB73F40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.Web.Core", "ClimateCamp.Web.Core\ClimateCamp.Web.Core.csproj", "{22CFE0D2-8DCA-42D7-AD7D-784C3862493F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.EntityFrameworkCore", "ClimateCamp.EntityFrameworkCore\ClimateCamp.EntityFrameworkCore.csproj", "{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CLimateCamp.GHG.Calculation", "CLimateCamp.GHG.Calculation", "{9F5BA34D-3C3D-44E7-9218-AB1CFF7AF6D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.GHG.Calculations", "ClimateCamp.GHG.Calculations\ClimateCamp.GHG.Calculations\ClimateCamp.GHG.Calculations.csproj", "{1CEA1453-A87A-4757-AB3B-9AE5D8B693E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{53905886-B0D6-448C-ADE7-789E34E24FB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateCamp.Tests", "ClimateCamp.Tests\ClimateCamp.Tests.csproj", "{B4A35578-3126-4B04-B7EB-F769B245E2E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E02AD9D-00B0-43CA-8A42-B339C861838D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		sonar-project.properties = sonar-project.properties
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FA75A5B-AB83-4FD0-B545-279774C01E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA75A5B-AB83-4FD0-B545-279774C01E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA75A5B-AB83-4FD0-B545-279774C01E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA75A5B-AB83-4FD0-B545-279774C01E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3870C648-4AEA-4B85-BA3F-F2F63B96136A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3870C648-4AEA-4B85-BA3F-F2F63B96136A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3870C648-4AEA-4B85-BA3F-F2F63B96136A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3870C648-4AEA-4B85-BA3F-F2F63B96136A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880B3591-E057-46FE-B525-10BD83828B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880B3591-E057-46FE-B525-10BD83828B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880B3591-E057-46FE-B525-10BD83828B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880B3591-E057-46FE-B525-10BD83828B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E184BD-E874-4633-A947-AED4FDB73F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E184BD-E874-4633-A947-AED4FDB73F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E184BD-E874-4633-A947-AED4FDB73F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E184BD-E874-4633-A947-AED4FDB73F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CFE0D2-8DCA-42D7-AD7D-784C3862493F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CFE0D2-8DCA-42D7-AD7D-784C3862493F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CFE0D2-8DCA-42D7-AD7D-784C3862493F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CFE0D2-8DCA-42D7-AD7D-784C3862493F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEA1453-A87A-4757-AB3B-9AE5D8B693E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEA1453-A87A-4757-AB3B-9AE5D8B693E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEA1453-A87A-4757-AB3B-9AE5D8B693E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEA1453-A87A-4757-AB3B-9AE5D8B693E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A35578-3126-4B04-B7EB-F769B245E2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A35578-3126-4B04-B7EB-F769B245E2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A35578-3126-4B04-B7EB-F769B245E2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A35578-3126-4B04-B7EB-F769B245E2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CEA1453-A87A-4757-AB3B-9AE5D8B693E4} = {9F5BA34D-3C3D-44E7-9218-AB1CFF7AF6D1}
+		{B4A35578-3126-4B04-B7EB-F769B245E2E1} = {53905886-B0D6-448C-ADE7-789E34E24FB1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A55C749-0BFF-4EFD-8499-12A2CB3B5B07}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "https://localhost:44311/",
+      "sslPort": 44311
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CalculationInitiatorQueueName": "sbq-consumption-calculation-initiater",
+        "ServiceBusConnectionString": "Endpoint=sb:/sb-climatecamp-communication-bus-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AjzY+t/J/LbYyjAZS8zQyBS4l2kl57chKU7Jv2NfqdY="
+      }
+    },
+    "ClimateCamp.Common.Web.Host": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:44311/",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CalculationInitiatorQueueName": "sbq-consumption-calculation-initiater",
+        "ServiceBusConnectionString": "Endpoint=sb:/sb-climatecamp-communication-bus-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AjzY+t/J/LbYyjAZS8zQyBS4l2kl57chKU7Jv2NfqdY="
+      },
+      "applicationUrl": "https://localhost:44311/"
+    }
+  }
+}

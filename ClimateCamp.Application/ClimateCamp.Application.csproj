@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>ClimateCamp.Application</AssemblyName>
+    <PackageId>ClimateCamp.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>ClimateCamp.Application</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <CodeAnalysisRuleSet>..\.sonarlint\climatecamp_climate-camp-portalcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="CarbonCompute\Shared\**" />
+    <Compile Remove="Reports\Dto\**" />
+    <EmbeddedResource Remove="CarbonCompute\Shared\**" />
+    <EmbeddedResource Remove="Reports\Dto\**" />
+    <None Remove="CarbonCompute\Shared\**" />
+    <None Remove="Reports\Dto\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CarbonCompute\EmissionGroups\Emission-Groups-Templates\Emission-Groups-Breweries.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\climatecamp_climate-camp-portal\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CarbonCompute\EmissionGroups\Emission-Groups-Templates\Emission-Groups-Breweries.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.FluentValidation" Version="8.1.0" />
+    <PackageReference Include="Azure.Identity" Version="1.8.2" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.15.0" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="EPPlus" Version="6.1.3" />
+    <PackageReference Include="FileHelpers" Version="3.5.2" />
+    <PackageReference Include="Microsoft.Graph" Version="4.54.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.50.0" />
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="4.13.0" />
+    <PackageReference Include="RestSharp" Version="108.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="System.Threading.AccessControl" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClimateCamp.Core\ClimateCamp.Core.csproj" />
+    <ProjectReference Include="..\ClimateCamp.EntityFrameworkCore\ClimateCamp.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

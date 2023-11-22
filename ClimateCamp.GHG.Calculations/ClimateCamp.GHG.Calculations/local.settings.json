@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "Default": "Server=tcp:sql-climatecamp.database.windows.net,1433;Initial Catalog=sqldb-cliamtecamp-stg;Persist Security Info=False;User ID=ClimateCampAdmin;Password=@Password1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+    //"Default": "Server=localhost; Database=ClimateCampLocal; Trusted_Connection=True;",
+    "ServiceBusConnectionString": "Endpoint=sb://sb-climatecamp-communication-bus-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AjzY+t/J/LbYyjAZS8zQyBS4l2kl57chKU7Jv2NfqdY=",
+    "CalculationInitiatorQueueName": "sbq-consumption-calculation-initiater"
+  }
+}

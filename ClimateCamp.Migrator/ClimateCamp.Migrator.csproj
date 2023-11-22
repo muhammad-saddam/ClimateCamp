@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>ClimateCamp.Migrator</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>ClimateCamp.Migrator</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <CodeAnalysisRuleSet>..\.sonarlint\climatecamp_climate-camp-portalcsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\climatecamp_climate-camp-portal\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json;log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Castle.Log4Net" Version="8.1.0" />
+    <PackageReference Include="System.Threading.AccessControl" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClimateCamp.Core\ClimateCamp.Core.csproj" />
+    <ProjectReference Include="..\ClimateCamp.EntityFrameworkCore\ClimateCamp.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

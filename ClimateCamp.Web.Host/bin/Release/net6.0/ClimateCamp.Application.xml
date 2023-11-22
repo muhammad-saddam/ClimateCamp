@@ -1,0 +1,1783 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClimateCamp.Application</name>
+    </assembly>
+    <members>
+        <member name="T:ClimateCamp.Common.Authorization.AbpLoginResultTypeHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.Authorization.AbpLoginResultTypeHelper.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.Authorization.AbpLoginResultTypeHelper.CreateExceptionForFailedLoginAttempt(Abp.Authorization.AbpLoginResultType,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="usernameOrEmailAddress"></param>
+            <param name="tenancyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Authorization.AbpLoginResultTypeHelper.CreateLocalizedMessageForFailedLoginAttempt(Abp.Authorization.AbpLoginResultType,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="usernameOrEmailAddress"></param>
+            <param name="tenancyName"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames">
+            <summary>
+            Common mime types. 
+            </summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXJavascript">
+            <summary>Used to denote the encoding necessary for files containing JavaScript source code. The alternative MIME type for this file type is text/javascript.</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioL24">
+            <summary>24bit Linear PCM audio at 8-48kHz, 1-N channels; Defined in RFC 3190</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXShockwaveFlash">
+            <summary>Adobe Flash files for example with the extension .swf</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationOctetStream">
+            <summary>Arbitrary binary data.[5] Generally speaking this type identifies files that are not associated with a specific application. Contrary to past assumptions by software packages such as Apache this is not a type that should be applied to unknown files. In such a case, a server or application should not indicate a content type, as it may be incorrect, but rather, should omit the type in order to allow the recipient to guess the type.[6]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationAtomXml">
+            <summary>Atom feeds</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextCss">
+            <summary>Cascading Style Sheets; Defined in RFC 2318</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextCmd">
+            <summary>commands; subtype resident in Gecko browsers like Firefox 3.5</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextCsv">
+            <summary>Comma-separated values; Defined in RFC 4180</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXDeb">
+            <summary>deb (file format), a software package format used by the Debian project</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MultipartEncrypted">
+            <summary>Defined in RFC 1847</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MultipartSigned">
+            <summary>Defined in RFC 1847</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MessageHttp">
+            <summary>Defined in RFC 2616</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelExample">
+            <summary>Defined in RFC 4735</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXDvi">
+            <summary>device-independent document in DVI format</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXmlDtd">
+            <summary>DTD files; Defined by RFC 3023</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationJavascript" -->
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationEcmascript">
+            <summary>ECMAScript/JavaScript; Defined in RFC 4329 (equivalent to application/javascript but with stricter processing rules)</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationEdifact">
+            <summary>EDI EDIFACT data; Defined in RFC 1767</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationEdiX12">
+            <summary>EDI X12 data; Defined in RFC 1767</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MessagePartial">
+            <summary>Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MessageRfc822">
+            <summary>Email; EML files, MIME files, MHT files, MHTML files; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextXml">
+            <summary>Extensible Markup Language; Defined in RFC 3023</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoXFlv">
+            <summary>Flash video (FLV files)</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImageGif">
+            <summary>GIF image; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextXGwtRpc">
+            <summary>GoogleWebToolkit data</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXGzip">
+            <summary>Gzip</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextHtml">
+            <summary>HTML; Defined in RFC 2854</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImageVndMicrosoftIcon">
+            <summary>ICO image; Registered[9]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelIges">
+            <summary>IGS files, IGES files; Defined in RFC 2077</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MessageImdnXml">
+            <summary>IMDN Instant Message Disposition Notification; Defined in RFC 5438</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationJson">
+            <summary>JavaScript Object Notation JSON; Defined in RFC 4627</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationJsonPatch">
+            <summary>JavaScript Object Notation (JSON) Patch; Defined in RFC 6902</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextJavascript" -->
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImagePjpeg">
+            <summary>JPEG JFIF image; Associated with Internet Explorer; Listed in ms775147(v=vs.85) - Progressive JPEG, initiated before global browser support for progressive JPEGs (Microsoft and Firefox).</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImageJpeg">
+            <summary>JPEG JFIF image; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextXJqueryTmpl">
+            <summary>jQuery template data</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndGoogleEarthKmlXml">
+            <summary>KML files (e.g. for Google Earth)</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXLatex">
+            <summary>LaTeX files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoXMatroska">
+            <summary>Matroska open media format</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOpenxmlformatsOfficedocumentSpreadsheetmlSheet">
+            <summary>Microsoft Excel 2007 files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndMsExcel">
+            <summary>Microsoft Excel files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOpenxmlformatsOfficedocumentPresentationmlPresentation">
+            <summary>Microsoft Powerpoint 2007 files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndMsPowerpoint">
+            <summary>Microsoft Powerpoint files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOpenxmlformatsOfficedocumentWordprocessingmlDocument">
+            <summary>Microsoft Word 2007 files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationMsword">
+            <summary>Microsoft Word files[15]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MultipartAlternative">
+            <summary>MIME Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MultipartMixed">
+            <summary>MIME Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MultipartRelated">
+            <summary>MIME Email; Defined in RFC 2387 and used by MHTML (HTML mail)</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.MultipartFormData">
+            <summary>MIME Webform; Defined in RFC 2388</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndMozillaXulXml">
+            <summary>Mozilla XUL files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioMpeg">
+            <summary>MP3 or other MPEG audio; Defined in RFC 3003</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioMp4">
+            <summary>MP4 audio</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoMp4">
+            <summary>MP4 video; Defined in RFC 4337</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoMpeg">
+            <summary>MPEG-1 video with multiplexed audio; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelMesh">
+            <summary>MSH files, MESH files; Defined in RFC 2077, SILO files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioBasic">
+            <summary>mulaw audio at 8 kHz, 1 channel; Defined in RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoOgg">
+            <summary>Ogg Theora or other video (with audio); Defined in RFC 5334</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioOgg">
+            <summary>Ogg Vorbis, Speex, Flac and other audio; Defined in RFC 5334</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationOgg">
+            <summary>Ogg, a multimedia bitstream container format; Defined in RFC 5334</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXopXml">
+            <summary>OP</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentGraphics">
+            <summary>OpenDocument Graphics; Registered[14]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentPresentation">
+            <summary>OpenDocument Presentation; Registered[13]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentSpreadsheet">
+            <summary>OpenDocument Spreadsheet; Registered[12]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentText">
+            <summary>OpenDocument Text; Registered[11]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs12">
+            <summary>p12 files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Certificates">
+            <summary>p7b and spc files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Mime">
+            <summary>p7c files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Certreqresp">
+            <summary>p7r files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Signature">
+            <summary>p7s files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationPdf">
+            <summary>Portable Document Format, PDF has been in use for document exchange on the Internet since 1993; Defined in RFC 3778</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImagePng">
+            <summary>Portable Network Graphics; Registered,[8] Defined in RFC 2083</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationPostscript">
+            <summary>PostScript; Defined in RFC 2046</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoQuicktime">
+            <summary>QuickTime video; Registered[10]</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXRarCompressed">
+            <summary>RAR archive files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioVndRnRealaudio">
+            <summary>RealAudio; Documented in RealPlayer Customer Support Answer 2559</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationRdfXml">
+            <summary>Resource Description Framework; Defined by RFC 3870</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationRssXml">
+            <summary>RSS feeds</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationSoapXml">
+            <summary>SOAP; Defined by RFC 3902</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXStuffit">
+            <summary>StuffIt archive files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImageSvgXml">
+            <summary>SVG vector image; Defined in SVG Tiny 1.2 Specification Appendix M</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ImageTiff">
+            <summary>Tag Image File Format (only for Baseline TIFF); Defined in RFC 3302</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXTar">
+            <summary>Tarball files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextPlain">
+            <summary>Textual data; Defined in RFC 2046 and RFC 3676</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXFontTtf">
+            <summary>TrueType Font No registered MIME type, but this is the most commonly used</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.TextVcard">
+            <summary>vCard (contact information); Defined in RFC 6350</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioVorbis">
+            <summary>Vorbis encoded audio; Defined in RFC 5215</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioVndWave">
+            <summary>WAV audio; Defined in RFC 2361</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationFontWoff">
+            <summary>Web Open Font Format; (candidate recommendation; use application/x-font-woff until standard is official)</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoWebm">
+            <summary>WebM Matroska-based open media format</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioWebm">
+            <summary>WebM open media format</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioXMsWax">
+            <summary>Windows Media Audio Redirector; Documented in Microsoft help page</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.AudioXMsWma">
+            <summary>Windows Media Audio; Documented in Microsoft KB 288102</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.VideoXMsWmv">
+            <summary>Windows Media Video; Documented in Microsoft KB 288102</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelVrml">
+            <summary>WRL files, VRML files; Defined in RFC 2077</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelX3DXml">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3D XML files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelX3DBinary">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3DB binary files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ModelX3DVrml">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3DV VRML files</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationXhtmlXml">
+            <summary>XHTML; Defined by RFC 3236</summary>
+        </member>
+        <member name="F:ClimateCamp.Common.Net.MimeTypes.MimeTypeNames.ApplicationZip">
+            <summary>ZIP archive files; Registered[7]</summary>
+        </member>
+        <member name="P:ClimateCamp.Common.Users.Dto.UserDto.Role">
+            <summary>
+            TODO: the ROle is an entity type, and is used here in a DTO type, it's architecturay wrong. Instead create a MapProfile type tomap from the entity type Role to specific propertis of the DTO like ROleId and ROleName
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Common.Users.Dto.UserDto.Organization">
+            <summary>
+            TODO: the Organization is an entity type, and is used here in a DTO type, instead we should use OrganizationDto
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Common.Users.Dto.UserDto.Editions">
+            <summary>
+            TODO: seem unused, improperly named as plural. 
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Common.Users.UserAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.Users.UserAppService.#ctor(Abp.Domain.Repositories.IRepository{ClimateCamp.Common.Authorization.Users.User,System.Int64},ClimateCamp.Common.Authorization.Users.UserManager,ClimateCamp.Common.Authorization.Roles.RoleManager,Abp.Domain.Repositories.IRepository{ClimateCamp.Common.Authorization.Roles.Role},Microsoft.AspNetCore.Identity.IPasswordHasher{ClimateCamp.Common.Authorization.Users.User},Abp.Runtime.Session.IAbpSession,ClimateCamp.Core.Authorization.LogInManager,ClimateCamp.Infrastructure.FileUploadService.IFileUploadService,Abp.Domain.Repositories.IRepository{ClimateCamp.Core.Organization,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.Common.Authorization.Users.User,System.Int64},System.Net.Http.IHttpClientFactory,ClimateCamp.EmailClient.Services.IEmailClientSender,Microsoft.Extensions.Configuration.IConfiguration,ClimateCamp.Infrastructure.AzureADB2C.IGraphClientService,ClimateCamp.Infrastructure.HubSpot.IHubspotService,Abp.Domain.Repositories.IRepository{ClimateCamp.Core.Editions.CustomEdition,System.Int32},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.EmissionsFactorsLibrary,System.Guid},Castle.Core.Logging.ILogger,Abp.Domain.Repositories.IRepository{ClimateCamp.Core.OrganizationUnit,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.Common.MultiTenancy.Tenant})">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+            <param name="userManager"></param>
+            <param name="roleManager"></param>
+            <param name="roleRepository"></param>
+            <param name="passwordHasher"></param>
+            <param name="abpSession"></param>
+            <param name="logInManager"></param>
+            <param name="fileUploadService"></param>
+            <param name="organisationRepository"></param>
+            <param name="userRepository"></param>
+            <param name="clientFactory"></param>
+            <param name="emailClientSender"></param>
+            <param name="config"></param>
+            <param name="graphClientService"></param>
+            <param name="editionRepository"></param>
+            <param name="emissionFactorLibraryRepository"></param>
+            <param name="logger"></param>
+            <param name="hubSpotService"></param>
+            <param name="organisationUnitRepository"></param>
+            <param name="tenantRepository"></param>
+        </member>
+        <member name="M:ClimateCamp.Common.Users.UserAppService.CreateSelfServiceOrganization(ClimateCamp.Application.CreateSelfServiceOrganizationDto)">
+            <summary>
+            Creating the organization on user registration. Creates and updates the organization HubSpot.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Users.UserAppService.InitialStageFootprintCalculation(ClimateCamp.Application.InitialStageFootprintCalculationDto)">
+            <summary>
+            This is used to calculate the initial stage CO2e footprint based on production volume in hectolitres
+            </summary>
+            <returns>Tons of CO2</returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Users.UserAppService.GetHubSpotCompanyByDomainAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="workEmail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Users.UserAppService.CreateHubSpotCompany(ClimateCamp.Infrastructure.Models.HubSpotCompanyRequestModel)">
+            <summary>
+            
+            </summary>
+            <param name="hubSpotCompanyModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Users.UserAppService.UpdateHubSpotCompany(ClimateCamp.Infrastructure.Models.HubSpotCompanyRequestModel)">
+            <summary>
+            
+            </summary>
+            <param name="hubSpotCompanyModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Application.ActivityDataFilterModel">
+            <summary>
+            Model used to filter activity data by OrganizationId and consumption start and end dates
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataFilterModel.ConsumptionStart">
+            <summary>
+            Consumption start date of activity data.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataFilterModel.ConsumptionEnd">
+            <summary>
+            Consumption end date of activity data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataFilterModel.OrganizationId">
+            <summary>
+            Organization Id
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataFilterModel.EmissionSourceId">
+            <summary>
+            selected emission source
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.ActivityDataVM">
+            <summary>
+            Model used to display activitieslist with emission and org unit
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.Id">
+            <summary>
+            activity data Id
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.Name">
+            <summary>
+            Activity Name
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.Emission">
+            <summary>
+            emission data associated with activity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.OrganizationUnit">
+            <summary>
+            Organization Unit data assocated with acivity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.OrganizationUnitId">
+            <summary>
+            consumption start - consumption end  period
+            </summary>
+            
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.EmissionSourceId">
+            <summary>
+            consumption start - consumption end  period
+            </summary>
+            
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.Period">
+            <summary>
+            consumption start - consumption end  period
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.IsProcessed">
+            <summary>
+            Activity data calculated emissions or not
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.IsDeleted">
+            <summary>
+            Activity data deleted or not
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.Quantity">
+            <summary>
+            Quantity of activity data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.ConsumptionStart">
+            <summary>
+            consumption start date
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.ConsumptionEnd">
+            <summary>
+            consumption end date
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.TransactionDate">
+            <summary>
+            transaction date
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.UnitId">
+            <summary>
+            Unit used for activity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.TransactionSource">
+            <summary>
+            Transaction Source of Activity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.Description">
+            <summary>
+            Activity Description
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.CO2e">
+            <summary>
+            CO2e - default in kg
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ActivityDataVM.CO2eUnitId">
+            <summary>
+            unit of CO2e
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.ManualEmissionsCSVUploadDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.OrganizationUnitId">
+            <summary>
+            The Guid of the Organization Unit.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.Name">
+            <summary>
+            name of the Activity Data.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.ActivityTypeId">
+            <summary>
+            The id of the Activity Type.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.DataQualityType">
+            <summary>
+            What kind of data it is? What is the source of the data?
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.ConsumptionStart">
+            <summary>
+            From which date the activity data is for.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.ConsumptionEnd">
+            <summary>
+            Until what date the activity data is for
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.TransactionDate">
+            <summary>
+            Can be billing date or ConsumptionEnd date. <br/>
+            In some cases we use this along with other params to prevent duplicate entries.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.ActivityDataQuantity">
+            <summary>
+            For this specific case we agreed to set it to 0 unless we actually know it's value. <br/>
+            It's part of the classic/special differentiation mechanism.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.ActivityDataUnit">
+            <summary>
+            The Unit for the Quantity of Activity Data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.CreatorUserId">
+            <summary>
+            We need to set this to a specific User Id. <br/>
+            This is part of the classic/special differentiation mechanism
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.EmissionsDataQualityScore">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.CO2e">
+            <summary>
+            Represents the total CO2E for the specific emission
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ManualEmissionsCSVUploadDto.CO2eUnit">
+            <summary>
+            Represents the Unit name (kg, t, etc) for the CO2e.
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.ManualEmissionsCSVUploadModelMap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.ManualEmissionsCSVUploadModelMap.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.PurchasedElectricityCSVUploadModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.OrganizationUnit">
+            <summary>
+            Name of the Organization Unit
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.ActivityDataType">
+            <summary>
+            Name of the Activity Type; ex: Purchased Electricity - Location Based
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.IsRenewable">
+            <summary>
+            Checks if it's renewable. This is used to accomodate the solar panels generated electricity.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.MeterNumber">
+            <summary>
+            EAN Meter Number
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.Quantity">
+            <summary>
+            Exact Quantity of data 
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.QuantityUnit">
+            <summary>
+            Measurement unit name; ex: kWh
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.ConsumptionStart">
+            <summary>
+            Starting date of the activity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.ConsumptionEnd">
+            <summary>
+            End date of the activity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityCSVUploadModel.TransactionDate">
+            <summary>
+            Billing date
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.PurchasedElectricityCSVUploadModelMap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.PurchasedElectricityCSVUploadModelMap.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.PurchasedElectricityRequestModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityRequestModel.OrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedElectricityRequestModel.EmissionSourceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.StationaryCombustionCSVUploadDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.OrganizationUnit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.ActivityDataType">
+            <summary>
+            activity dat atype like Purchased Natural Gas
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.Quantity">
+            <summary>
+            actual quantity of data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.QuantityUnit">
+            <summary>
+            unit of activity like kwh, EUR
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.TransactionDate">
+            <summary>
+            date of activity
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.TransactionSource">
+            <summary>
+            source of activity data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.ActivityName">
+            <summary>
+            activity name 
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.StationaryCombustionCSVUploadDto.ActivityDescription">
+            <summary>
+            description of activity 
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.StationaryCombustionCSVUploadDtoMap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.StationaryCombustionCSVUploadDtoMap.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.CalculationFunctionRequestModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CalculationFunctionRequestModel.OrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CalculationFunctionRequestModel.EmissionSourceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.ActivityDataAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.#ctor(Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.ActivityData,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.Unit,System.Int32},Abp.Domain.Repositories.IRepository{ClimateCamp.Core.OrganizationUnit,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.ActivityType,System.Int32},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{ClimateCamp.Application.ActivityDataAppService},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.FuelType,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.PurchasedEnergyData,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.StationaryCombustionData,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.MobileCombustionData,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.EmissionsSource,System.Int32},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.Emission,System.Guid},Abp.Notifications.INotificationPublisher)">
+            <summary>
+            
+            </summary>
+            <param name="activityDataRepository"></param>
+            <param name="unitRepository"></param>
+            <param name="organizationUnitRepository"></param>
+            <param name="activityTypeRepository"></param>
+            <param name="clientFactory"></param>
+            <param name="config"></param>
+            <param name="logger"></param>
+            <param name="fuelTypeRepository"></param>
+            <param name="stationaryCombustionDataRepository"></param>
+            <param name="mobileCombustionDataRepository"></param>
+            <param name="emissionsSourceRepository"></param>
+            <param name="emissionsRepository"></param>
+            <param name="notificationPublisher"></param>
+            <param name="purchasedEnergyDataRepository"></param>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.AddActivityByEmissionSourceAsync(ClimateCamp.Application.ActivityDataVM)">
+            <summary>
+            Method to upload activity data
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.UpdateActivityByEmissionSourceAsync(ClimateCamp.Application.ActivityDataVM)">
+            <summary>
+            method to upload Update activity data
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.GetActivityDataByOrganizationId(ClimateCamp.Application.ActivityDataFilterModel)">
+            <summary>
+            Gets activity data by organization id, and consumption start and end dates
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.UploadDistanceTravelActivityDataCSV(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload distance activity data in csv and retrun in json
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.UploadStationaryCombustionActivityDataCSV(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload stationary combustion data in csv and retrun in json
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.SaveDistanceActivityData(System.Collections.Generic.List{ClimateCamp.Application.CSVUploadModel},System.Nullable{System.Guid},System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="activityData"></param>
+            <param name="organizationId"></param>
+            <param name="emissionSourceId"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.AddDistanceActivityData(ClimateCamp.Application.CSVUploadModel)">
+            <summary>
+            Save Distance Activity Data
+            </summary>
+            <param name="activityDataItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.SaveStationaryCombustionActivityData(System.Collections.Generic.List{ClimateCamp.Application.StationaryCombustionCSVUploadDto},System.Nullable{System.Guid},System.Int32,System.String)">
+            <summary>
+            save SationaryCombustion Data in activityData table 
+            </summary>
+            <param name="activityData"></param>
+            <param name="organizationId"></param>
+            <param name="emissionSourceId"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.InsertStationaryCombustionData(ClimateCamp.Application.StationaryCombustionCSVUploadDto)">
+            <summary>
+            Insert Stationary Combustion Data
+            </summary>
+            <param name="activityDataItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.CallStationaryCombustionCalculationFunction(System.Nullable{System.Guid},System.Int32)">
+            <summary>
+            call stationary Combustion Calculation Azure function
+            </summary>
+            <param name="organizationId"></param>
+            <param name="emissionSourceId"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.UploadPurchasedElectricityActivityDataCSV(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Returns Purchased Electricity activity data that was read from file. 
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.SavePurchasedElectricityActivityData(System.Collections.Generic.List{ClimateCamp.Application.PurchasedElectricityCSVUploadModel},System.Nullable{System.Guid},System.Int32,System.String)">
+            <summary>
+            Saves Purchased Electricity activity data into the database.
+            </summary>
+            <param name="activityData"></param>
+            <param name="organizationId"></param>
+            <param name="emissionSourceId"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.InsertPurchaseElectrictyData(ClimateCamp.Application.PurchasedElectricityCSVUploadModel)">
+            <summary>
+            Insert purchase elctricity type data
+            </summary>
+            <param name="activityDataItem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.UploadManualEmissionsDataCSV(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Returns manually added Emissions data that was read from file. 
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.SaveManualEmissionsData(System.Collections.Generic.List{ClimateCamp.Application.ManualEmissionsCSVUploadDto},System.String)">
+            <summary>
+            Saves a manually added Emission and its respective Activity Data to the DB
+            </summary>
+            <param name="activityData"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.PublishFileUploaded(System.String,System.Int32,System.String)">
+            <summary>
+            Send a general notification to a specific user
+            </summary>
+            <param name="fileName"></param>
+            <param name="totalCount"></param>
+            <param name="emissionsSourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.checkIfTransactionAlreadyExist(System.DateTime,System.String,System.Single,System.Guid)">
+            <summary>
+            check if transaction record already exist against provided input params
+            </summary>
+            <param name="transactionDate"></param>
+            <param name="transcactionId"></param>
+            <param name="quantity"></param>
+            <param name="organizationUnitId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ActivityDataAppService.CheckIfManualEmissionAlreadyExists(System.DateTime,System.Single,System.Int32,System.Guid)">
+            <summary>
+            Checks if a manually added emission already exists in the databse.
+            </summary>
+            <param name="transactionDate"></param>
+            <param name="CO2e"></param>
+            <param name="activityTypeId"></param>
+            <param name="organizationUnitId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.EmissionSourcesAppService.GetAllEmissionSources">
+            <summary>
+            Get all emission sources
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.EmissionSourcesAppService.GetAllEmissionsCountByEmissionSources(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Guid)">
+            <summary>
+            Get all Emission sources with total Emissions
+            </summary>
+            <param name="consumptionStart"></param>
+            <param name="consumptionEnd"></param>
+            <param name="organizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ClimateCamp.Application.EmissionsReportFilterModel.EmissionsSourceId">
+            <summary>
+            Select emissions by emissions source id (int).
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.EmissionsAppService.#ctor(Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.Emission,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.Core.OrganizationUnit,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.EmissionsFactorsLibrary,System.Guid},Microsoft.Extensions.Logging.ILogger{ClimateCamp.Application.EmissionsAppService},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.ActivityType,System.Int32})">
+            <param name="emissionRepository"></param>
+            <param name="organizationUnitRepository"></param>
+            <param name="emissionsFactorsLibraryRepository"></param>        
+            <param name="logger"></param>
+            <param name="activityTypeRepository"></param>
+        </member>
+        <member name="P:ClimateCamp.Application.CreatePurchaseProductDto.CO2eq">
+            <summary>
+            CO2eq in kg per product unit
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.PurchasedProductsDataDto">
+            <summary>
+            Dto to store Purchase Goods Data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.PurchasedProductsDataDto.CO2eq">
+            <summary>
+            CO2eq in kg per product unit
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.PurchaseProductsResponseDto">
+            <summary>
+            DTo to egt Purchase products
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.IPurchasedProductsAppService">
+            <summary>
+            Purchase Products API end points
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.PurchasedProductsAppService">
+            <summary>
+            Purchase Products API end points
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.PurchasedProductsAppService.#ctor(Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.PurchasedProductsData,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.ActivityData,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.ActivityType,System.Int32},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.Emission,System.Guid},Microsoft.Extensions.Logging.ILogger{ClimateCamp.Application.PurchasedProductsAppService},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.Product,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.Unit,System.Int32},Abp.Domain.Repositories.IRepository{ClimateCamp.Core.Organization,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.Core.OrganizationUnit,System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="purchaseProductsRepository"></param>
+            <param name="activityDataRepository"></param>
+            <param name="activityTypeRepository"></param>
+            <param name="emissionsRepository"></param>
+            <param name="productRepository"></param>
+            <param name="unitRepository"></param>
+            <param name="organizationRepository"></param>
+            <param name="organizationUnitRepository"></param>
+        </member>
+        <member name="M:ClimateCamp.Application.PurchasedProductsAppService.GetPurchaseProductsByOrganizationId(System.Guid,System.DateTime,System.DateTime)">
+            <summary>
+            fetch list of purchase goods by organizationId
+            </summary>
+            <param name="organizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.PurchasedProductsAppService.AddPurchaseProductAsync(ClimateCamp.Application.CreatePurchaseProductDto)">
+            <summary>
+            Add Purchased Products Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.PurchasedProductsAppService.UpdatePurchaseProductAsync(ClimateCamp.Application.CreatePurchaseProductDto)">
+            <summary>
+            Update Purchased Products Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Application.AddTransportAndEmissionsDataDto">
+            <summary>
+            Dto to store Transport and Distribution data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.AddTransportAndEmissionsDataDto.TransportMode">
+            <summary>
+            Air, rail, road, sea. <br/> <see cref="T:ClimateCamp.CarbonCompute.GHG.ModeOfTransport"/>
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.AddTransportAndEmissionsDataDto.Type">
+            <summary>
+            Represents either Upstream or Downstream.<br/> 
+            <see cref="T:ClimateCamp.Core.CarbonCompute.Enum.TransportAndDistributionType"/>
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.CreateTransportAndDistributionDataDto">
+            <summary>
+            Dto to store Transport and Distribution data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateTransportAndDistributionDataDto.TransportMode">
+            <summary>
+            Air, rail, road, sea. <br/> <see cref="T:ClimateCamp.CarbonCompute.GHG.ModeOfTransport"/>
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateTransportAndDistributionDataDto.Type">
+            <summary>
+            Represents either Upstream or Downstream.<br/> 
+            <see cref="T:ClimateCamp.Core.CarbonCompute.Enum.TransportAndDistributionType"/>
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.TransportAndDistributionDataDto">
+            <summary>
+            Dto to store Transport and Distribution data
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.TransportAndDistributionDataDto.TransportMode">
+            <summary>
+            Air, rail, road, sea.<br/> <see cref="T:ClimateCamp.CarbonCompute.GHG.ModeOfTransport"/>
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.TransportAndDistributionDataDto.Type">
+            <summary>
+            Represents either Upstream or Downstream.<br/>
+            <see cref="T:ClimateCamp.Core.CarbonCompute.Enum.TransportAndDistributionType"/>
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.VehicleTypesDto.ModeOfTransport">
+            <summary>
+            Road, Rail, Air, etc <br/>
+            <see cref="T:ClimateCamp.CarbonCompute.GHG.ModeOfTransport"/>
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.TransportAndDistributionAppService.AddTransportDataAndEmissionsAsync(ClimateCamp.Application.AddTransportAndEmissionsDataDto)">
+            <summary>
+            This method is used to add Transport and Distribution activity data as well as a corresponding emission
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.TransportAndDistributionAppService.GetTransportationData(System.Guid,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Method used to retrieve TransportAndDistribution ActivityData and correlating Emissions. <br/>
+            If there is no emission entry associated with the activity data entry, it will still return the activity data but with default values. <br/>
+            It is used to populate the table view in the Upstream/Downstream categories.
+            </summary>
+            <param name="organizationId"></param>
+            <param name="emissionSourceId"></param>
+            <param name="consumptionStart"></param>
+            <param name="consumptionEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.TransportAndDistributionAppService.UpdateTransportDataAndEmissionsAsync(ClimateCamp.Application.AddTransportAndEmissionsDataDto)">
+            <summary>
+            Method used to update the existing data for a TransportAndDistribution activity data as well as the correlating emission entry.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Application.CommonAppServiceBase">
+            <summary>
+            Derive your application services from this class.
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.DeleteAllUserNotificationsInput">
+            <summary>
+            Used to select what notifications to request for deletion
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.DeleteAllUserNotificationsInput.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.DeleteAllUserNotificationsInput.StartDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.DeleteAllUserNotificationsInput.EndDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.GetNotificationSettingsOutput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationSettingsOutput.ReceiveNotifications">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationSettingsOutput.Notifications">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.NotificationSubscriptionWithDisplayNameDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.NotificationSubscriptionWithDisplayNameDto.DisplayName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.NotificationSubscriptionWithDisplayNameDto.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.GetNotificationsInput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationsInput.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationsInput.StartDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationsInput.EndDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.GetNotificationsOutput">
+            <summary>
+            Response with Notifications for the logged in user.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationsOutput.UnreadCount">
+            <summary>
+            Unread notifications count
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationsOutput.TotalCount">
+            <summary>
+            Total count of notifications
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.GetNotificationsOutput.Items">
+            <summary>
+            List of  user notifications
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.SetNotificationAsReadOutput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.SetNotificationAsReadOutput.Success">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.UpdateNotificationSettingsInput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.UpdateNotificationSettingsInput.ReceiveNotifications">
+            <summary>
+            Used to completely Enable/Disable receiving notifications
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.UpdateNotificationSettingsInput.Notifications">
+            <summary>
+            Specific notification types subscription settings
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.NotificationSubscriptionDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.NotificationSubscriptionDto.Name">
+            <summary>
+            The setting for a specific notificaiton type. ex. <c>"ClimateCamp.FileUploaded"</c> or a value from the <c>NotificationTypes</c> class.
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.NotificationSubscriptionDto.IsSubscribed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.INotificationAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.GetUserNotifications(ClimateCamp.Application.GetNotificationsInput)">
+            <summary>
+            Get the user notifications that were addressed to the logged in user
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.SetAllNotificationsAsRead">
+            <summary>
+            Set all the user notifications as read, for the logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.SetNotificationAsRead(Abp.Application.Services.Dto.EntityDto{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.GetNotificationSettings">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.UpdateNotificationSettings(ClimateCamp.Application.UpdateNotificationSettingsInput)">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.DeleteNotification(Abp.Application.Services.Dto.EntityDto{System.Guid})">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.INotificationAppService.DeleteAllUserNotifications(ClimateCamp.Application.DeleteAllUserNotificationsInput)">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Application.NotificationAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.#ctor(Abp.Notifications.INotificationPublisher,Abp.Notifications.INotificationStore,Abp.RealTime.IOnlineClientManager,Abp.Notifications.INotificationDefinitionManager,Abp.Notifications.INotificationSubscriptionManager)">
+            <summary>
+            
+            </summary>
+            <param name="notificationPublisher"></param>
+            <param name="notificationStore"></param>
+            <param name="onlineClientManager"></param>
+            <param name="notificationDefinitionManager"></param>
+            <param name="notificationSubscriptionManager"></param>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.DeleteAllUserNotifications(ClimateCamp.Application.DeleteAllUserNotificationsInput)">
+            <inheritdoc/>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.DeleteNotification(Abp.Application.Services.Dto.EntityDto{System.Guid})">
+            <inheritdoc/>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.GetUserNotifications(ClimateCamp.Application.GetNotificationsInput)">
+            <inheritdoc/>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.SetAllNotificationsAsRead">
+            <inheritdoc/>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.SetNotificationAsRead(Abp.Application.Services.Dto.EntityDto{System.Guid})">
+            <inheritdoc/>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.GetNotificationSettings">
+            <inheritdoc/>
+        </member>
+        <member name="M:ClimateCamp.Application.NotificationAppService.UpdateNotificationSettings(ClimateCamp.Application.UpdateNotificationSettingsInput)">
+            <inheritdoc/>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateOrganizationDto.EditionId">
+            <summary>
+            assigned edition to organization
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.OrganizationDto.Edition">
+            <summary>
+            TODO: THe CustomEdition is an Entity type used in a DTO
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateProductDto.CO2eq">
+            <summary>
+            CO2eq in kg per product unit
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ProductDto.CO2eq">
+            <summary>
+            CO2eq in kg per product unit
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ProductRequestManagementDto.OrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.ProductRequestManagementDto.CO2eq">
+            <summary>
+            CO2eq in kg per product unit
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.ProductsAppService.GetAllProductsManagementRequestData(System.Guid)">
+            <summary>
+            Method to populate the Request Table View.
+            </summary>
+            <param name="organizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ProductsAppService.GetAllSharedProductsManagementRequestData(System.Guid)">
+            <summary>
+            Retrieves all the Products of an Organization that have the 'shared' Status. 
+            This will populate the drop down of previously approved products, for updating data or merging duplicate products entries.  
+            </summary>
+            <param name="organizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ProductsAppService.UploadProductLogo(Microsoft.AspNetCore.Http.IFormFile,System.Guid)">
+            <summary>
+            Upload Product Logo To Azure Blob Storage
+            </summary>
+            <param name="file"></param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.ProductsAppService.InsertPurchasedProdcutEmissions(ClimateCamp.Application.CreateProductDto,ClimateCamp.CarbonCompute.Product)">
+            <summary>
+            Calculate and insert emissions for Products only if they are missing
+            </summary>
+            <param name="input"></param>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Application.CreateCustomerSuppliersDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateCustomerSuppliersDto.Name">
+            <summary>
+            Name of the organisation
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateCustomerSuppliersDto.YearlyProductQuantity">
+            <summary>
+            Tons of purchased products yearly
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateCustomerSuppliersDto.YearlyServiceQuantity">
+            <summary>
+            Yearly invoiced services in €
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateCustomerSuppliersDto.CountryId">
+            <summary>
+            Country of origin
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateCustomerSuppliersDto.PersonalMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateCustomerSuppliersDto.Phone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.CreateSupplierInput">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateSupplierInput.CustomerOrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateSupplierInput.SupplierOrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Application.CreateSupplierInput.Phone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.ISupplierAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Application.SupplierAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Application.SupplierAppService.#ctor(Abp.Domain.Repositories.IRepository{ClimateCamp.Core.CustomerSupplier,System.Int64},Abp.Domain.Repositories.IRepository{ClimateCamp.Core.Organization,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.CarbonCompute.EmissionsFactorsLibrary,System.Guid},Abp.Domain.Repositories.IRepository{ClimateCamp.Common.Authorization.Users.User,System.Int64},ClimateCamp.EmailClient.Services.IEmailClientSender,Microsoft.Extensions.Configuration.IConfiguration,ClimateCamp.Infrastructure.HubSpot.IHubspotService,Abp.Domain.Repositories.IRepository{ClimateCamp.Core.Editions.CustomEdition,System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="supplierRepository"></param>
+            <param name="organisationRepository"></param>
+            <param name="emissionFactorRepository"></param>
+            <param name="userRepository"></param>
+            <param name="emailClientSender"></param>
+            <param name="configuration"></param>
+            <param name="hubSpotService"></param>
+            <param name="editionRepository"></param>
+        </member>
+        <member name="M:ClimateCamp.Application.SupplierAppService.CreateAsync(ClimateCamp.Application.CreateSupplierInput)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.SupplierAppService.GetSuppliersByorganizationId(ClimateCamp.Supplier.Dto.SuppliersRequestDto)">
+            <summary>
+            fetch All Suppliers organization with filtered with customers organizationId
+            </summary>
+            <param name="input">If the customerOrganizationId is Guid.Empty it will retrieve all suppliers</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Application.SupplierAppService.GetSuppliersByCustomerOrganizationIdAndStatusValidated(System.Guid)">
+            <summary>
+            fetch All Suppliers organization with filtered with customers organizationId and also with status validated
+            </summary>
+            <param name="customrOrganizationId">If Guid.Empty it will retrieve all suppliers</param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService">
+            <summary>
+            GAzure AD Graph Client Service
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.getGraphClient">
+            <summary>
+            Create Graph Service client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.CreateUser(ClimateCamp.Application.CreateUserDto)">
+            <summary>
+            Create Azure AD B@C User
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.UpdateUser(ClimateCamp.Common.Users.Dto.UserDto)">
+            <summary>
+            Update Azure AD B2C user
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.DeleteUserById(System.String)">
+            <summary>
+            Delete User By email
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.GetUserById(System.String)">
+            <summary>
+            Get User By email
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.ListUsers">
+            <summary>
+            List All users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.GetUserBySignInName(System.String)">
+            <summary>
+            Get User by email 
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.SetPasswordByUserId(System.String,System.String)">
+            <summary>
+            Set User Password
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.AzureADB2C.GraphClientService.GenerateNewPassword(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            generate dummy password
+            </summary>
+            <param name="lowercase"></param>
+            <param name="uppercase"></param>
+            <param name="numerics"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Infrastructure.AzureADB2C.Globals">
+            <summary>
+            Global strings
+            </summary>
+        </member>
+        <member name="F:ClimateCamp.Infrastructure.AzureADB2C.Globals.aadInstance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ClimateCamp.Infrastructure.AzureADB2C.Globals.aadGraphResourceId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ClimateCamp.Infrastructure.AzureADB2C.Globals.aadGraphEndpoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ClimateCamp.Infrastructure.AzureADB2C.Globals.aadGraphSuffix">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ClimateCamp.Infrastructure.AzureADB2C.Globals.aadGraphVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Infrastructure.FileUploadService.BlobFileUploadService">
+             <summary>
+            generic  File Upload service 
+             </summary>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.FileUploadService.BlobFileUploadService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Azure Blob Upload Service
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.FileUploadService.BlobFileUploadService.UploadFileAsync(ClimateCamp.Infrastructure.Models.UploadFileModel)">
+            <summary>
+            Upload Logo
+            </summary>
+            <param name="uploadModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Infrastructure.HubSpot.HubSpotService">
+            <summary>
+            HubSpot APi calling service
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.HubSpotService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            constructor
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.HubSpotService.CreateHubSpotCompany(ClimateCamp.Infrastructure.Models.HubSpotCompanyRequestModel)">
+            <summary>
+            Create HubSpot Company
+            </summary>
+            <param name="hubSpotCompanyModel"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.HubSpotService.GetHubSpotCompanyByDomainAsync(System.String)">
+            <summary>
+            get Hubspot company by email
+            </summary>
+            <param name="workEmail"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.HubSpotService.UpdateHubSpotCompany(ClimateCamp.Infrastructure.Models.HubSpotCompanyRequestModel)">
+            <summary>
+            Update hubspot company info
+            </summary>
+            <param name="hubSpotCompanyModel"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:ClimateCamp.Infrastructure.HubSpot.IHubspotService">
+            <summary>
+            Hubspot API methods
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.IHubspotService.GetHubSpotCompanyByDomainAsync(System.String)">
+            <summary>
+            Get hubspot company information by workemail
+            </summary>
+            <param name="workEmail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.IHubspotService.CreateHubSpotCompany(ClimateCamp.Infrastructure.Models.HubSpotCompanyRequestModel)">
+            <summary>
+            Create Hubspot company 
+            </summary>
+            <param name="hubSpotCompanyModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.HubSpot.IHubspotService.UpdateHubSpotCompany(ClimateCamp.Infrastructure.Models.HubSpotCompanyRequestModel)">
+            <summary>
+            Update existing hubspot companies
+            </summary>
+            <param name="hubSpotCompanyModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClimateCamp.Infrastructure.Models.HubSpotCompanySearchByDomainRequestModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Infrastructure.Models.HubSpotCompanySearchByDomainRequestModel.filterGroups">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Infrastructure.Models.HubSpotCompanySearchByDomainRequestModel.properties">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Infrastructure.Models.HubSpotCompanySearchByDomainRequestModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Supplier.Dto.CustomerSuppliersDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.Name">
+            <summary>
+            Name of the organisation
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.ContactPersonFirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.ContactPersonLastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.ContactEmailAddress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.Product">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.YearlyProductQuantity">
+            <summary>
+            Tons of purchased products yearly
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.YearlyServiceQuantity">
+            <summary>
+            Yearly invoiced services in €
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.CountryId">
+            <summary>
+            Country of origin
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.PersonalMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.CustomerOrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.Tag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.Status">
+            <summary>
+            Scored, To Invite, Requested
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.CO2E">
+            <summary>
+            CO3E total usage
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.CustomerSuppliersDto.Phone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Supplier.Dto.PagedCustomerSuppliersResultRequestDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Supplier.Dto.SuppliersRequestDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ClimateCamp.Supplier.Dto.SuppliersRequestDto.customerOrganizationId">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

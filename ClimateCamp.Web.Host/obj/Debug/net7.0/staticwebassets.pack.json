@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\swagger\\ui\\abp.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\abp.js"
+    },
+    {
+      "Id": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\swagger\\ui\\abp.swagger.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\abp.swagger.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ClimateCamp.Common.Web.Host.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ClimateCamp.Common.Web.Host.props",
+      "PackagePath": "build\\ClimateCamp.Common.Web.Host.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ClimateCamp.Common.Web.Host.props",
+      "PackagePath": "buildMultiTargeting\\ClimateCamp.Common.Web.Host.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ClimateCamp.Common.Web.Host.props",
+      "PackagePath": "buildTransitive\\ClimateCamp.Common.Web.Host.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

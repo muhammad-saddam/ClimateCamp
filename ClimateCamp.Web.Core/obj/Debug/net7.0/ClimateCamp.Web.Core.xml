@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClimateCamp.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:ClimateCamp.Common.CommonWebCoreModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.CommonWebCoreModule.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:ClimateCamp.Common.CommonWebCoreModule.PreInitialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.CommonWebCoreModule.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.CommonWebCoreModule.PostInitialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Controllers.TokenAuthController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Controllers.TokenAuthController.#ctor(ClimateCamp.Core.Authorization.LogInManager,Abp.MultiTenancy.ITenantCache,ClimateCamp.Common.Authorization.AbpLoginResultTypeHelper,ClimateCamp.Common.Authentication.JwtBearer.TokenAuthConfiguration,ClimateCamp.Common.Authentication.External.IExternalAuthConfiguration,ClimateCamp.Common.Authentication.External.IExternalAuthManager,ClimateCamp.Common.Authorization.Users.UserRegistrationManager)">
+            <summary>
+            
+            </summary>
+            <param name="logInManager"></param>
+            <param name="tenantCache"></param>
+            <param name="abpLoginResultTypeHelper"></param>
+            <param name="configuration"></param>
+            <param name="externalAuthConfiguration"></param>
+            <param name="externalAuthManager"></param>
+            <param name="userRegistrationManager"></param>
+        </member>
+        <member name="M:ClimateCamp.Controllers.TokenAuthController.Authenticate(ClimateCamp.Common.Models.TokenAuth.AuthenticateModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

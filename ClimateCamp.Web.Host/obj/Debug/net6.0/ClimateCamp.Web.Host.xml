@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClimateCamp.Web.Host</name>
+    </assembly>
+    <members>
+        <member name="M:ClimateCamp.Web.Host.Common.ActionFilters.FileUploadOperationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="T:ClimateCamp.Web.Host.Common.ActionFilters.FileUploadOperationFilter.FileContentType">
+            <summary>
+            Indicates swashbuckle should consider the parameter as a file upload
+            </summary>
+        </member>
+        <member name="T:ClimateCamp.Common.Web.Host.Controllers.HomeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClimateCamp.Common.Web.Host.Controllers.HomeController.#ctor(Abp.Notifications.INotificationPublisher)">
+            <summary>
+            
+            </summary>
+            <param name="notificationPublisher"></param>
+        </member>
+        <member name="M:ClimateCamp.Common.Web.Host.Controllers.HomeController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Web.Host.Controllers.HomeController.TestNotification(System.String)">
+            <summary>
+            TODO: This is a demo code to demonstrate sending notification to default tenant admin and host admin uers.
+            Don't use this code in production !!!
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClimateCamp.Common.Web.Host.Startup.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="loggerFactory"></param>
+        </member>
+    </members>
+</doc>

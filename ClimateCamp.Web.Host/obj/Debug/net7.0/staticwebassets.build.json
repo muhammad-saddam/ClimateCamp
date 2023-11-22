@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "E1Qa2gsCqJH3N8y5fBc1SCxsU0w129szw/L+4wYTNNM=",
+  "Source": "ClimateCamp.Common.Web.Host",
+  "BasePath": "_content/ClimateCamp.Common.Web.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ClimateCamp.Common.Web.Host\\wwwroot",
+      "Source": "ClimateCamp.Common.Web.Host",
+      "ContentRoot": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\",
+      "BasePath": "_content/ClimateCamp.Common.Web.Host",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\swagger\\ui\\abp.js",
+      "SourceId": "ClimateCamp.Common.Web.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\",
+      "BasePath": "_content/ClimateCamp.Common.Web.Host",
+      "RelativePath": "swagger/ui/abp.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger\\ui\\abp.js"
+    },
+    {
+      "Identity": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\swagger\\ui\\abp.swagger.js",
+      "SourceId": "ClimateCamp.Common.Web.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Upwork\\Monk\\ClimateCamp\\ClimateCamp.Web.Host\\wwwroot\\",
+      "BasePath": "_content/ClimateCamp.Common.Web.Host",
+      "RelativePath": "swagger/ui/abp.swagger.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger\\ui\\abp.swagger.js"
+    }
+  ]
+}
